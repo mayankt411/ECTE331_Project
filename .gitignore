@@ -1,0 +1,9 @@
+# Compiled class files
+bin/
+*.class
+
+# Documentation generated folder
+javadoc/
+
+# Local text logs (we will keep the sample ones we want to document, but exclude random ones if needed, let's keep log.txt in repo for review)
+log_*.txt
