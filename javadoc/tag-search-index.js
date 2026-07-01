@@ -1,1 +1,1 @@
-tagSearchIndex = [{"l":"Serialized Form","h":"","u":"serialized-form.html"}];updateSearchResults();
+tagSearchIndex = [{"l":"Expected Final Values (computed analytically):","h":"class SyncMain","d":"Section","u":"SyncMain.html#expected-final-values-computed-analytically--heading"},{"l":"Serialized Form","h":"","u":"serialized-form.html"}];updateSearchResults();
