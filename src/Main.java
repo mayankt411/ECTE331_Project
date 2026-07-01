@@ -8,6 +8,11 @@ import java.util.Random;
  */
 public class Main {
     /**
+     * Private constructor; this class is not meant to be instantiated.
+     * All logic runs from the static main method.
+     */
+    private Main() {}
+    /**
      * Main entry point of the simulation. Runs the simulation loop
      * inside a try-catch block to gracefully enter SAFE MODE.
      * 
