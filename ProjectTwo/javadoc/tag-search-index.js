@@ -1,0 +1,1 @@
+tagSearchIndex = [{"l":"Expected Final Values (computed analytically):","h":"class SyncMain","d":"Section","u":"SyncMain.html#expected-final-values-computed-analytically--heading"}];updateSearchResults();
