@@ -1,0 +1,25 @@
+[2026-07-04 22:58:50.367] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_105.txt
+[2026-07-04 22:58:50.371] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-04 22:58:50.373] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-04 22:58:50.374] [INPUT] Sensor A: 107m, Sensor B: 103m, Sensor C: 107m
+[2026-07-04 22:58:50.376] [OUTLIER_DETECTION] Outlier sensors detected: [Sensor B]
+[2026-07-04 22:58:50.377] [MAJORITY_DECISION] Majority vote successful. Altitude set to: 107 m
+[2026-07-04 22:58:50.377] [STATUS] Current Drone Decided Altitude: 107 m
+[2026-07-04 22:58:50.879] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-04 22:58:50.884] [SENSOR_FAILURE] Sensor A read failure: Hardware failure detected in Sensor A
+[2026-07-04 22:58:50.885] [INPUT] Sensor A: FAILED, Sensor B: 113m, Sensor C: 106m
+[2026-07-04 22:58:50.887] [SENSOR_FAILURE] Sensor A failed (exception thrown)
+[2026-07-04 22:58:50.890] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor B, Sensor C]
+[2026-07-04 22:58:50.929] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:58:50.930] [FALLBACK_DECISION] Falling back to previous altitude: 107 m
+[2026-07-04 22:58:50.930] [STATUS] Current Drone Decided Altitude: 107 m
+[2026-07-04 22:58:51.433] [FLIGHT_LOG] --- Simulation Step 3 ---
+[2026-07-04 22:58:51.434] [SENSOR_FAILURE] Sensor C read failure: Hardware failure detected in Sensor C
+[2026-07-04 22:58:51.434] [INPUT] Sensor A: 115m, Sensor B: 114m, Sensor C: FAILED
+[2026-07-04 22:58:51.434] [SENSOR_FAILURE] Sensor C failed (exception thrown)
+[2026-07-04 22:58:51.434] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B]
+[2026-07-04 22:58:51.435] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:58:51.438] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-04 22:58:51.440] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-04 22:58:51.441] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-04 22:58:51.441] [SYSTEM_STOP] System shut down safely and stopped execution.

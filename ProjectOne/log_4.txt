@@ -1,0 +1,45 @@
+[2026-07-01 21:34:27.027] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_4.txt
+[2026-07-01 21:34:27.032] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-01 21:34:27.035] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-01 21:34:27.036] [INPUT] Sensor A: 108m, Sensor B: 107m, Sensor C: 105m
+[2026-07-01 21:34:27.037] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B, Sensor C]
+[2026-07-01 21:34:27.046] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-01 21:34:27.046] [FALLBACK_DECISION] Falling back to previous altitude: 100 m
+[2026-07-01 21:34:27.046] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-01 21:34:27.576] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-01 21:34:27.583] [INPUT] Sensor A: 106m, Sensor B: -27m, Sensor C: 106m
+[2026-07-01 21:34:27.606] [CORRUPTED_READING] Sensor B produced corrupted reading: -27 m
+[2026-07-01 21:34:27.608] [OUTLIER_DETECTION] Outlier sensors detected: [Sensor B]
+[2026-07-01 21:34:27.608] [MAJORITY_DECISION] Majority vote successful. Altitude set to: 106 m
+[2026-07-01 21:34:27.608] [STATUS] Current Drone Decided Altitude: 106 m
+[2026-07-01 21:34:28.114] [FLIGHT_LOG] --- Simulation Step 3 ---
+[2026-07-01 21:34:28.114] [INPUT] Sensor A: 114m, Sensor B: 202m, Sensor C: 231m
+[2026-07-01 21:34:28.114] [CORRUPTED_READING] Sensor B produced corrupted reading: 202 m
+[2026-07-01 21:34:28.114] [CORRUPTED_READING] Sensor C produced corrupted reading: 231 m
+[2026-07-01 21:34:28.118] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: Fewer than 2 valid sensor readings exist. Outliers: [Sensor B, Sensor C]
+[2026-07-01 21:34:28.118] [STATUS] Current Drone Decided Altitude: 106 m
+[2026-07-01 21:34:28.627] [FLIGHT_LOG] --- Simulation Step 4 ---
+[2026-07-01 21:34:28.634] [SENSOR_FAILURE] Sensor B read failure: Hardware failure detected in Sensor B
+[2026-07-01 21:34:28.637] [INPUT] Sensor A: 116m, Sensor B: FAILED, Sensor C: 116m
+[2026-07-01 21:34:28.638] [SENSOR_FAILURE] Sensor B failed (exception thrown)
+[2026-07-01 21:34:28.638] [OUTLIER_DETECTION] Outlier sensors detected: [Sensor B]
+[2026-07-01 21:34:28.640] [MAJORITY_DECISION] Majority vote successful. Altitude set to: 116 m
+[2026-07-01 21:34:28.641] [STATUS] Current Drone Decided Altitude: 116 m
+[2026-07-01 21:34:29.152] [FLIGHT_LOG] --- Simulation Step 5 ---
+[2026-07-01 21:34:29.153] [SENSOR_FAILURE] Sensor B read failure: Hardware failure detected in Sensor B
+[2026-07-01 21:34:29.156] [INPUT] Sensor A: 126m, Sensor B: FAILED, Sensor C: 120m
+[2026-07-01 21:34:29.156] [SENSOR_FAILURE] Sensor B failed (exception thrown)
+[2026-07-01 21:34:29.159] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor C]
+[2026-07-01 21:34:29.159] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-01 21:34:29.168] [FALLBACK_DECISION] Falling back to previous altitude: 116 m
+[2026-07-01 21:34:29.168] [STATUS] Current Drone Decided Altitude: 116 m
+[2026-07-01 21:34:29.676] [FLIGHT_LOG] --- Simulation Step 6 ---
+[2026-07-01 21:34:29.685] [SENSOR_FAILURE] Sensor C read failure: Hardware failure detected in Sensor C
+[2026-07-01 21:34:29.685] [INPUT] Sensor A: 225m, Sensor B: 132m, Sensor C: FAILED
+[2026-07-01 21:34:29.687] [CORRUPTED_READING] Sensor A produced corrupted reading: 225 m
+[2026-07-01 21:34:29.687] [SENSOR_FAILURE] Sensor C failed (exception thrown)
+[2026-07-01 21:34:29.687] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: Fewer than 2 valid sensor readings exist. Outliers: [Sensor A, Sensor C]
+[2026-07-01 21:34:29.687] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-01 21:34:29.689] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-01 21:34:29.689] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-01 21:34:29.689] [SYSTEM_STOP] System shut down safely and stopped execution.

@@ -1,0 +1,17 @@
+[2026-07-04 22:58:41.364] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_380.txt
+[2026-07-04 22:58:41.368] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-04 22:58:41.368] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-04 22:58:41.370] [INPUT] Sensor A: 106m, Sensor B: 105m, Sensor C: 103m
+[2026-07-04 22:58:41.371] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B, Sensor C]
+[2026-07-04 22:58:41.389] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:58:41.390] [FALLBACK_DECISION] Falling back to previous altitude: 100 m
+[2026-07-04 22:58:41.391] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-04 22:58:41.893] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-04 22:58:41.909] [INPUT] Sensor A: 108m, Sensor B: 106m, Sensor C: -22m
+[2026-07-04 22:58:41.940] [CORRUPTED_READING] Sensor C produced corrupted reading: -22 m
+[2026-07-04 22:58:41.941] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B]
+[2026-07-04 22:58:41.941] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:58:41.943] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-04 22:58:41.944] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-04 22:58:41.947] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-04 22:58:41.949] [SYSTEM_STOP] System shut down safely and stopped execution.

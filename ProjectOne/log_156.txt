@@ -1,0 +1,28 @@
+[2026-07-04 22:28:01.111] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_156.txt
+[2026-07-04 22:28:01.124] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-04 22:28:01.124] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-04 22:28:01.126] [INPUT] Sensor A: 106m, Sensor B: 104m, Sensor C: 108m
+[2026-07-04 22:28:01.126] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B, Sensor C]
+[2026-07-04 22:28:01.126] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:28:01.126] [FALLBACK_DECISION] Falling back to previous altitude: 100 m
+[2026-07-04 22:28:01.127] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-04 22:28:01.637] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-04 22:28:01.639] [INPUT] Sensor A: 112m, Sensor B: 112m, Sensor C: 105m
+[2026-07-04 22:28:01.639] [OUTLIER_DETECTION] Outlier sensors detected: [Sensor C]
+[2026-07-04 22:28:01.641] [MAJORITY_DECISION] Majority vote successful. Altitude set to: 112 m
+[2026-07-04 22:28:01.643] [STATUS] Current Drone Decided Altitude: 112 m
+[2026-07-04 22:28:02.147] [FLIGHT_LOG] --- Simulation Step 3 ---
+[2026-07-04 22:28:02.149] [INPUT] Sensor A: -30m, Sensor B: 111m, Sensor C: 112m
+[2026-07-04 22:28:02.149] [CORRUPTED_READING] Sensor A produced corrupted reading: -30 m
+[2026-07-04 22:28:02.149] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor B, Sensor C]
+[2026-07-04 22:28:02.151] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:28:02.151] [FALLBACK_DECISION] Falling back to previous altitude: 112 m
+[2026-07-04 22:28:02.151] [STATUS] Current Drone Decided Altitude: 112 m
+[2026-07-04 22:28:02.653] [FLIGHT_LOG] --- Simulation Step 4 ---
+[2026-07-04 22:28:02.655] [INPUT] Sensor A: 124m, Sensor B: 122m, Sensor C: 117m
+[2026-07-04 22:28:02.657] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B, Sensor C]
+[2026-07-04 22:28:02.658] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:28:02.659] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-04 22:28:02.659] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-04 22:28:02.661] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-04 22:28:02.662] [SYSTEM_STOP] System shut down safely and stopped execution.

@@ -1,0 +1,21 @@
+[2026-07-04 22:51:41.798] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_245.txt
+[2026-07-04 22:51:41.802] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-04 22:51:41.803] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-04 22:51:41.804] [SENSOR_FAILURE] Sensor C read failure: Hardware failure detected in Sensor C
+[2026-07-04 22:51:41.805] [INPUT] Sensor A: 107m, Sensor B: 103m, Sensor C: FAILED
+[2026-07-04 22:51:41.805] [SENSOR_FAILURE] Sensor C failed (exception thrown)
+[2026-07-04 22:51:41.806] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor B]
+[2026-07-04 22:51:41.824] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:51:41.826] [FALLBACK_DECISION] Falling back to previous altitude: 100 m
+[2026-07-04 22:51:41.827] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-04 22:51:42.329] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-04 22:51:42.331] [SENSOR_FAILURE] Sensor A read failure: Hardware failure detected in Sensor A
+[2026-07-04 22:51:42.331] [SENSOR_FAILURE] Sensor C read failure: Hardware failure detected in Sensor C
+[2026-07-04 22:51:42.333] [INPUT] Sensor A: FAILED, Sensor B: 112m, Sensor C: FAILED
+[2026-07-04 22:51:42.333] [SENSOR_FAILURE] Sensor A failed (exception thrown)
+[2026-07-04 22:51:42.333] [SENSOR_FAILURE] Sensor C failed (exception thrown)
+[2026-07-04 22:51:42.334] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: Fewer than 2 valid sensor readings exist. Outliers: [Sensor A, Sensor C]
+[2026-07-04 22:51:42.334] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-04 22:51:42.335] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-04 22:51:42.335] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-04 22:51:42.335] [SYSTEM_STOP] System shut down safely and stopped execution.

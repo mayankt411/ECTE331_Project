@@ -1,0 +1,23 @@
+[2026-07-04 22:56:43.423] [SYSTEM_START] Drone Navigation Simulation started. Log file: log_517.txt
+[2026-07-04 22:56:43.427] [FLIGHT_LOG] Starting flight plan simulation...
+[2026-07-04 22:56:43.427] [FLIGHT_LOG] --- Simulation Step 1 ---
+[2026-07-04 22:56:43.430] [INPUT] Sensor A: 104m, Sensor B: 100m, Sensor C: 100m
+[2026-07-04 22:56:43.431] [OUTLIER_DETECTION] Outlier sensors detected: [Sensor A]
+[2026-07-04 22:56:43.432] [MAJORITY_DECISION] Majority vote successful. Altitude set to: 100 m
+[2026-07-04 22:56:43.432] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-04 22:56:43.935] [FLIGHT_LOG] --- Simulation Step 2 ---
+[2026-07-04 22:56:43.940] [INPUT] Sensor A: -38m, Sensor B: 113m, Sensor C: 112m
+[2026-07-04 22:56:43.966] [CORRUPTED_READING] Sensor A produced corrupted reading: -38 m
+[2026-07-04 22:56:43.983] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor B, Sensor C]
+[2026-07-04 22:56:44.024] [RELIABILITY_FAILURE] Reliability failure occurred (1/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:56:44.025] [FALLBACK_DECISION] Falling back to previous altitude: 100 m
+[2026-07-04 22:56:44.025] [STATUS] Current Drone Decided Altitude: 100 m
+[2026-07-04 22:56:44.528] [FLIGHT_LOG] --- Simulation Step 3 ---
+[2026-07-04 22:56:44.544] [INPUT] Sensor A: 118m, Sensor B: -35m, Sensor C: 117m
+[2026-07-04 22:56:44.557] [CORRUPTED_READING] Sensor B produced corrupted reading: -35 m
+[2026-07-04 22:56:44.565] [OUTLIER_DETECTION] All sensor outputs differ. Outliers: [Sensor A, Sensor C]
+[2026-07-04 22:56:44.567] [RELIABILITY_FAILURE] Reliability failure occurred (2/2 consecutive). Detail: No majority found among sensor readings. All outputs differ.
+[2026-07-04 22:56:44.569] [SAFE_MODE_ACTIVATION] CRITICAL: Two consecutive failures reached. Activating SAFE MODE!
+[2026-07-04 22:56:44.573] [SAFE_MODE_ACTIVE] CRITICAL SYSTEM STATE: Catch block triggered SAFE MODE transition.
+[2026-07-04 22:56:44.577] [SAFE_MODE_ACTIVE] Exception message: System entered SAFE MODE due to critical reliability failures.
+[2026-07-04 22:56:44.579] [SYSTEM_STOP] System shut down safely and stopped execution.
